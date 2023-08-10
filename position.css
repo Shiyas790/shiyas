@@ -1,0 +1,85 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.one{
+    height:500px;
+    width: 500px;
+    background-color: blue;
+    position: relative;
+    padding: 20px;
+}
+.two{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    transform: perspective(11vh) scaleZ(2) rotate(20deg);
+}
+.three{
+    height: 50px;
+    width: 50px;
+    background-color: chartreuse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+    transform: scaley(3);
+    transform: rotate(2rad);
+    transform: skew(20deg);
+    transform: perspective(10vh) translateZ(-10vh);
+}
+/* position/static/relative/absolute/fixed/sticky */
+/* top/left/right/insect/  scale/transform:translate */
+button{
+    position: relative;
+    height: 3rem;
+    width: 5rem;
+    margin: 50px;
+}
+button::before{/* pseudo class */
+    content:"4";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-50%);
+    height: 1rem;
+    width: 1rem;
+    background-color: yellow;
+    border-radius: 0.5rem;
+}
+button:hover{ 
+    background-color: burlywood;
+    transform:scale(2);
+
+}
+input:focus{
+    background-color: chocolate;
+    outline: black 2px;
+    transform: translate(50%,-50%);
+
+
+}
+p::first-letter{
+    background-color: blanchedalmond;
+}
+p::selection{
+    color: bisque;
+    background-color: green;
+}
+li::marker{
+    color: aqua;
+}
+#hello:checked{
+    transform: translate(0,2rem);
+}
+input:enabled{
+    background-color: cornflowerblue;
+}
+p{
+    height: 20px;
+    width: 60px;
+}
+p:empty{
+    background-color: black;
+}

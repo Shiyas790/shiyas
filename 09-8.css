@@ -1,0 +1,66 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.outerclass{
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+    /* position: relative; */
+}
+/* .a{
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+} */
+.b{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(20, 80, 219);
+    /* position: absolute;
+    top: 200px;
+    left: 200px;
+ */
+}
+
+button{
+    position:relative;
+    height: 3rem;
+    width: 6rem;
+    box-shadow: 5px 5px 0 wheat;
+    transition: 0.25s;
+}
+ button:hover{ /*pseudo classes */
+    background-color: rgb(254, 250, 173);
+    transform: translate(10px,10px);
+}
+input:focus{
+    background-color: green;
+    outline:yellow solid 2px:
+}
+#hello:checked{
+    transform: translate(0,2rem);
+}
+input:disabled{
+    /* background-color:aquamarine; */
+}
+input:enabled{
+    background-color: beige;
+}
+p{
+    height:20rem;
+    width: 60rem;
+}
+p:empty{
+    background-color: yellow;
+}
+button::before{   /*pseudo events*/
+    content:"12";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1rem;
+    width: 1rem;
+    background-color: red;
+    transform: translate(50%,-50%);
+}
